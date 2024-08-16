@@ -1,34 +1,24 @@
 import { useWallet } from "@aptos-labs/wallet-adapter-react";
-// Internal Components
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Header } from "@/components/Header";
-import { WalletDetails } from "@/components/WalletDetails";
-import { NetworkInfo } from "@/components/NetworkInfo";
-import { AccountInfo } from "@/components/AcoountInfo";
+import Layout from "./Layout";
+import TopNavBar from "./components/TopNavBar";
+import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
+import FaqSection from "./components/FaqSection";
+import WhyGlobuy from "./components/WhyGlobuy";
+import BusinessStrategy from "./components/BusinessStrategy";
 
 function App() {
   const { connected } = useWallet();
 
   return (
-    <>
-      <Header />
-
-      <div className="flex items-center justify-center flex-col">
-        {connected ? (
-          <Card>
-            <CardContent className="flex flex-col gap-10 pt-6">
-              <WalletDetails />
-              <NetworkInfo />
-              <AccountInfo />
-            </CardContent>
-          </Card>
-        ) : (
-          <CardHeader>
-            <CardTitle>To get started Connect a wallet</CardTitle>
-          </CardHeader>
-        )}
-      </div>
-    </>
+    <Layout>
+      <TopNavBar />
+      <HeroSection />
+      <WhyGlobuy />
+      <BusinessStrategy />
+      <FaqSection />
+      <Footer />
+    </Layout>
   );
 }
 
