@@ -1,24 +1,46 @@
 import { useWallet } from "@aptos-labs/wallet-adapter-react";
 import Layout from "./Layout";
-import TopNavBar from "./components/TopNavBar";
-import HeroSection from "./components/HeroSection";
-import Footer from "./components/Footer";
-import FaqSection from "./components/FaqSection";
-import WhyGlobuy from "./components/WhyGlobuy";
-import BusinessStrategy from "./components/BusinessStrategy";
+import VendorPage from "./pages/VendorPage";
+import ProductListPage from "./pages/ProductListPage";
+import WelcomePage from "./pages/WelcomePage";
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import ProductDetailPage from "./pages/ProductDetailPage";
+import DepositPage from "./pages/DepositPage";
+import FullPaymentPage from "./pages/FullPaymentPage";
 
 function App() {
   const { connected } = useWallet();
 
   return (
-    <Layout>
-      <TopNavBar />
-      <HeroSection />
-      <WhyGlobuy />
-      <BusinessStrategy />
-      <FaqSection />
-      <Footer />
-    </Layout>
+    <Router>
+      <Layout>
+        <Routes>
+          {/* Route for Welcome Page */}
+          <Route
+            path="/"
+            element={connected ? <Navigate to="/vendors" /> : <WelcomePage />}
+          />
+
+          {/* Conditionally render VendorPage if wallet is connected */}
+          <Route
+            path="/vendors"
+            element={connected ? <VendorPage /> : <Navigate to="/" />}
+          />
+
+          {/* Route for ProductListPage with dynamic vendor name */}
+          <Route path="/vendors/:vendorName" element={<ProductListPage />} />
+
+          {/* Route for ProductDetailPage with dynamic product name */}
+          <Route path="/vendors/:vendorName/:productName" element={<ProductDetailPage />} />
+
+          {/* Route for DepositPage with dynamic vendor name and product name */}
+          <Route path="/vendors/:vendorName/:productName/deposit" element={<DepositPage />} />
+
+          {/* Route for Full Payment Page with dynamic vendor name and product name */}
+          <Route path="/vendors/:vendorName/:productName/deposit/full-payment" element={<FullPaymentPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

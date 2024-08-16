@@ -1,22 +1,19 @@
-import { useNavigate, useParams } from "react-router-dom";
-
-
-function DepositPage() {
-
-  const navigate = useNavigate();
-  const { vendorName, productName } = useParams();
-
-  const handlePayDepositClick = () => {
-    navigate(`/vendors/${vendorName}/${productName}/deposit/full-payment`);
-  };
+function FullPaymentPage() {
+  // Assuming deposit fee and merchandise cost are pre-determined and calculated
+  const merchandiseSubtotal = 100.00;
+  const deliveryFee = 20.00;
+  const insuranceFee = 10.00;
+  const depositFee = 10.00;
+  const totalCost = merchandiseSubtotal + deliveryFee + insuranceFee;
+  const handInPrice = totalCost - depositFee;
 
   return (
     <div className="min-h-screen bg-gray-100 p-8 relative">
-      <div className="bg-white rounded-lg shadow-md p-8 pb-28"> {/* Added pb-20 for padding-bottom */}
+      <div className="bg-white rounded-lg shadow-md p-8 pb-28">
         {/* Header Section */}
         <div className="flex items-center mb-6">
           <button className="text-2xl mr-4">&larr;</button>
-          <h1 className="text-2xl font-semibold">Deposit</h1>
+          <h1 className="text-2xl font-semibold">Payment</h1>
         </div>
 
         {/* Product Information Section */}
@@ -82,6 +79,7 @@ function DepositPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
+                defaultChecked
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Insurance (10% product cost)
@@ -99,78 +97,53 @@ function DepositPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
+                defaultChecked
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Terms & Condition
               </span>
             </label>
           </div>
-
-          {/* Gray Bar */}
-          <div className="bg-gray-200 h-[19px] w-full"></div>
-
-          {/* Promo Code Section */}
-          <div className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="w-7 h-7 text-blue-600"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21 10H7M21 6H7m14 8H7m14 4H7m0 4H3m4-16H3m0 4H3m0 4H3m0 4H3m0 4H3m4-16H3m4 0H7"
-              />
-            </svg>
-            <input
-              type="text"
-              placeholder="Store Promo Code"
-              className="ml-3 w-full bg-gray-100 rounded-lg p-3 border border-gray-300"
-            />
-            <p className="text-gray-600 ml-3 text-lg">$0.00</p>
-          </div>
         </div>
 
-        {/* Gray Bar */}
-        <div className="bg-gray-200 h-[19px] w-full mb-8"></div>
-
-        {/* Cost Breakdown Section */}
+        {/* Final Payment Section */}
+        <div className="bg-gray-200 h-[19px] w-full mb-6"></div>
         <div className="space-y-4 text-right text-gray-600">
           <div className="flex justify-between text-lg">
-            <p>Deposit Fee (Payable amount):</p>
-            <p className="text-orange-500">$10.00</p>
-          </div>
-          <div className="flex justify-between text-lg">
             <p>Merchandise Subtotal:</p>
-            <p>$100.00</p>
+            <p>${merchandiseSubtotal.toFixed(2)}</p>
           </div>
           <div className="flex justify-between text-lg">
             <p>Delivery Fee:</p>
-            <p>$20.00</p>
+            <p>${deliveryFee.toFixed(2)}</p>
           </div>
           <div className="flex justify-between text-lg">
             <p>Insurance:</p>
-            <p>$10.00</p>
+            <p>${insuranceFee.toFixed(2)}</p>
           </div>
           <div className="flex justify-between font-semibold text-xl">
             <p>Total Cost:</p>
-            <p className="text-orange-500">$130.00</p>
+            <p className="text-orange-500">${totalCost.toFixed(2)}</p>
+          </div>
+          <div className="flex justify-between text-lg">
+            <p>Deposit Fee:</p>
+            <p className="text-orange-500">- ${depositFee.toFixed(2)}</p>
+          </div>
+          <div className="flex justify-between text-lg">
+            <p>Hand-in Price:</p>
+            <p className="text-teal-600 font-semibold">${handInPrice.toFixed(2)}</p>
           </div>
         </div>
 
-        {/* Pay Deposit Now Button */}
+        {/* Payment Button */}
         <button
-          onClick={handlePayDepositClick}
           className="bg-black text-white font-bold py-3 px-6 rounded-lg absolute bottom-16 right-16"
         >
-          Pay Deposit Now
+          Payment
         </button>
       </div>
     </div>
   );
 }
 
-export default DepositPage;
+export default FullPaymentPage;
