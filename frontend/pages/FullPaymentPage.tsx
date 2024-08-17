@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 function FullPaymentPage() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isInsuranceChecked, setIsInsuranceChecked] = useState(false); // Initially unchecked
+  const [isTermsChecked, setIsTermsChecked] = useState(false); // Initially unchecked
+
+  const navigate = useNavigate(); // Initialize navigate for navigation
 
   const merchandiseSubtotal = 100.00;
   const deliveryFee = 20.00;
   const insuranceFee = 10.00;
- 
+
   const totalCost = merchandiseSubtotal + deliveryFee + insuranceFee;
-  const handInPrice = totalCost ;
+  const handInPrice = totalCost;
 
   const handlePaymentClick = () => {
-    setIsDialogOpen(true);
+    if (isInsuranceChecked && isTermsChecked) {
+      setIsDialogOpen(true);
+    } else {
+      alert('Please agree to the insurance and terms & conditions to proceed.');
+    }
   };
 
   const handleContinueClick = () => {
     setIsDialogOpen(false);
+    navigate('/vendors'); // Redirect to the VendorPage after successful payment
   };
 
   return (
@@ -90,7 +100,8 @@ function FullPaymentPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
-                defaultChecked
+                checked={isInsuranceChecked}
+                onChange={(e) => setIsInsuranceChecked(e.target.checked)}
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Insurance (10% product cost)
@@ -108,7 +119,8 @@ function FullPaymentPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
-                defaultChecked
+                checked={isTermsChecked}
+                onChange={(e) => setIsTermsChecked(e.target.checked)}
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Terms & Condition
@@ -145,8 +157,9 @@ function FullPaymentPage() {
 
         {/* Payment Button */}
         <button
-          className="bg-black text-white font-bold py-3 px-6 rounded-lg absolute bottom-16 right-16"
+          className={`bg-black text-white font-bold py-3 px-6 rounded-lg absolute bottom-16 right-16 ${!isInsuranceChecked || !isTermsChecked ? 'opacity-50 cursor-not-allowed' : ''}`}
           onClick={handlePaymentClick}
+          disabled={!isInsuranceChecked || !isTermsChecked}
         >
           Payment
         </button>
@@ -162,13 +175,6 @@ function FullPaymentPage() {
                 onClick={handleContinueClick}
               >
                 Continue
-              </button>
-              <div></div>
-              <button
-                className="text-blue-500 underline mt-4"
-                onClick={handleContinueClick}
-              >
-                Generate Invoice
               </button>
             </div>
           </div>
