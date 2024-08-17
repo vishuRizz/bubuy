@@ -1,6 +1,9 @@
 const WhyGlobuy = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold mb-6"></h1>
+      <h1 className="text-3xl font-bold mb-6"></h1>
+      <h1 className="text-3xl font-bold mb-6"></h1>
       <h1 className="text-3xl font-bold mb-6">Why Globuy?</h1>
       <p className="text-center max-w-2xl mb-10">
         A global ecommerce platform that partners with other ecommerce and manufacturers to enable shopping from anywhere, even in restricted countries, with secure, automated transactions and real-time tracking.
@@ -41,22 +44,22 @@ const WhyGlobuy = () => {
         </div>
         <div className="flex-1 flex flex-col justify-center">
           <div className="space-y-3 text-left">
-            <div className="flex items-center">
-              <span className="text-green-500 text-xl mr-2">✓</span>
-              <p>Decentralised transactions</p>
-            </div>
-            <div className="flex items-center">
-              <span className="text-green-500 text-xl mr-2">✓</span>
-              <p>Enhanced Security</p>
-            </div>
-            <div className="flex items-center">
-              <span className="text-green-500 text-xl mr-2">✓</span>
-              <p>Transparency</p>
-            </div>
-            <div className="flex items-center">
-              <span className="text-green-500 text-xl mr-2">✓</span>
-              <p>Regulatory Compliance</p>
-            </div>
+          <div className="flex items-center mb-4">
+    <span className="text-green-500 text-2xl mr-4">✓</span>
+    <p className="text-3xl">Decentralised transactions</p>
+</div>
+<div className="flex items-center mb-4">
+    <span className="text-green-500 text-2xl mr-4">✓</span>
+    <p className="text-3xl">Enhanced Security</p>
+</div>
+<div className="flex items-center mb-4">
+    <span className="text-green-500 text-2xl mr-4">✓</span>
+    <p className="text-3xl">Transparency</p>
+</div>
+<div className="flex items-center mb-4">
+    <span className="text-green-500 text-2xl mr-4">✓</span>
+    <p className="text-3xl">Regulatory Compliance</p>
+</div>
           </div>
         </div>
       </div>

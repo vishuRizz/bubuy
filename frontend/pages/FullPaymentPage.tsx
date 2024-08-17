@@ -3,9 +3,9 @@ function FullPaymentPage() {
   const merchandiseSubtotal = 100.00;
   const deliveryFee = 20.00;
   const insuranceFee = 10.00;
-  const depositFee = 10.00;
+  
   const totalCost = merchandiseSubtotal + deliveryFee + insuranceFee;
-  const handInPrice = totalCost - depositFee;
+  const handInPrice = totalCost 
 
   return (
     <div className="min-h-screen bg-gray-100 p-8 relative">
@@ -79,7 +79,7 @@ function FullPaymentPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
-                defaultChecked
+                
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Insurance (10% product cost)
@@ -97,7 +97,7 @@ function FullPaymentPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
-                defaultChecked
+                
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Terms & Condition
@@ -125,10 +125,7 @@ function FullPaymentPage() {
             <p>Total Cost:</p>
             <p className="text-orange-500">${totalCost.toFixed(2)}</p>
           </div>
-          <div className="flex justify-between text-lg">
-            <p>Deposit Fee:</p>
-            <p className="text-orange-500">- ${depositFee.toFixed(2)}</p>
-          </div>
+          
           <div className="flex justify-between text-lg">
             <p>Hand-in Price:</p>
             <p className="text-teal-600 font-semibold">${handInPrice.toFixed(2)}</p>

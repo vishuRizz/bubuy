@@ -1,6 +1,6 @@
 const BusinessStrategy = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center py-16">
+    <div className="min-h-8 bg-white flex flex-col items-center justify-center py-1">
       <h1 className="text-3xl font-bold text-center mb-6">
         Our business strategy will revolutionize many businesses across the globe
       </h1>

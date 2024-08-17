@@ -5,7 +5,7 @@ import ProductListPage from "./pages/ProductListPage";
 import WelcomePage from "./pages/WelcomePage";
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import ProductDetailPage from "./pages/ProductDetailPage";
-import DepositPage from "./pages/DepositPage";
+
 import FullPaymentPage from "./pages/FullPaymentPage";
 
 function App() {
@@ -33,11 +33,10 @@ function App() {
           {/* Route for ProductDetailPage with dynamic product name */}
           <Route path="/vendors/:vendorName/:productName" element={<ProductDetailPage />} />
 
-          {/* Route for DepositPage with dynamic vendor name and product name */}
-          <Route path="/vendors/:vendorName/:productName/deposit" element={<DepositPage />} />
+          
 
           {/* Route for Full Payment Page with dynamic vendor name and product name */}
-          <Route path="/vendors/:vendorName/:productName/deposit/full-payment" element={<FullPaymentPage />} />
+          <Route path="/vendors/:vendorName/:productName/full-payment" element={<FullPaymentPage />} />
         </Routes>
       </Layout>
     </Router>
