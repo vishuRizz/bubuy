@@ -34,8 +34,6 @@ function App() {
           {/* Route for ProductDetailPage with dynamic product name */}
           <Route path="/vendors/:vendorName/:productName" element={<ProductDetailPage />} />
 
-          
-
           {/* Route for Full Payment Page with dynamic vendor name and product name */}
           <Route path="/vendors/:vendorName/:productName/full-payment" element={<FullPaymentPage />} />
         </Routes>
