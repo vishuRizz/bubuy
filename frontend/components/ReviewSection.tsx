@@ -116,6 +116,7 @@ const ReviewSection = () => {
             </svg>
           </button>
         </div>
+        <hr className="my-8 " />
       </div>
     </div>
   );

@@ -1,32 +1,32 @@
 function SimilarProducts() {
   const products = [
     {
-      name: "Oppo F1",
-      originalPrice: 230.0,
-      discountedPrice: 200.0,
+      name: "Water From my Eyes",
+      originalPrice: 50.0,
+      discountedPrice: 6.5,
       discount: "-13%",
-      image: "/images/oppo-f1.jpg",
+      image: "/images/water.jpg",
     },
     {
-      name: "Huawei Tablet",
-      originalPrice: 230.0,
-      discountedPrice: 200.0,
+      name: "Casual Hex",
+      originalPrice: 100.0,
+      discountedPrice: 80.0,
       discount: "-13%",
-      image: "/images/huawei-tablet.jpg",
+      image: "/images/casual.jpg",
     },
     {
-      name: "iWatch Series 5",
-      originalPrice: 230.0,
-      discountedPrice: 200.0,
+      name: "Producct of the underground demon",
+      originalPrice: 100.0,
+      discountedPrice: 80.0,
       discount: "-13%",
-      image: "/images/iwatch-series-5.jpg",
+      image: "/images/demo.jpg",
     },
     {
-      name: "Samsung Z Flip",
-      originalPrice: 230.0,
-      discountedPrice: 200.0,
+      name: "The Tale of two ecosystem",
+      originalPrice: 100.0,
+      discountedPrice: 80.0,
       discount: "-13%",
-      image: "/images/samsung-z-flip.jpg",
+      image: "/images/tales.jpg",
     },
   ];
 

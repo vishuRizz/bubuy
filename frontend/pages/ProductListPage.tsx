@@ -10,12 +10,12 @@ export default function ProductListPage() {
       <div className="max-w-full mx-auto p-8">
         {/* Logo Section */}
         <div className="bg-orange-500 p-4 rounded-lg mb-6 flex justify-center">
-          <img src={`/images/${vendorName?.toLowerCase()}-banner.png`} alt={`${vendorName} Logo`} className="h-16" />
+          <img src={`/images/${vendorName?.toLowerCase()}-banner.png`} alt={`${vendorName} logo`} className="h-16" />
         </div>
 
         {/* Categories */}
         <div className="flex justify-center space-x-4 mb-8">
-          {['All Products', 'Phone', 'Watch', 'Monitor', 'Tv'].map((category, index) => (
+          {['Genres', 'Vinyl', 'CDs', 'Cassettes', 'T-Shirts'].map((category, index) => (
             <button key={index} className="px-4 py-2 bg-white rounded-md shadow-md text-gray-600 hover:text-gray-800">
               {category}
             </button>

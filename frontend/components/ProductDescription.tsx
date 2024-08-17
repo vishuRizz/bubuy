@@ -9,8 +9,7 @@ interface Props {
   thumbnail_3: string;
 }
 
-function ProductDescription({ title, description, main_image, thumbnail_1, thumbnail_2, thumbnail_3 }: Props) {
-
+function ProductDescription({ title, description, main_image, thumbnail_1, thumbnail_2, thumbnail_3 }) {
   const navigate = useNavigate();
   const { vendorName, productName } = useParams();
 
@@ -19,10 +18,10 @@ function ProductDescription({ title, description, main_image, thumbnail_1, thumb
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 ">
+    <div className="container  px-4 py-4">
       {/* Back Button */}
-      <div className="flex items-center mb-4 lg:w-1/2 lg:px-[120px] px-[120px] border-l border-r ">
-        <button className="text-lg text-gray-600 hover:text-gray-900  ">
+      <div className="flex items-center mb-8 lg:w-1/2 lg:px-[100px] px-[100px] border-l border-r">
+        <button className="text-lg text-gray-600 hover:text-gray-900">
           ← Xiaomi Page
         </button>
       </div>
@@ -31,32 +30,36 @@ function ProductDescription({ title, description, main_image, thumbnail_1, thumb
       <div className="flex flex-col lg:flex-row">
 
         {/* Product Images */}
-        <div className="flex lg:w-1/2 space-x-8">
+        <div className="flex lg:w-1/2" style={{ marginLeft: '130px' }}>
           {/* Left side - Thumbnails */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col justify-between" style={{ width: '90px', gap: '5px' }}>
             <img
               src={thumbnail_1}
               alt="Thumbnail 1"
-              className="w-[120px] h-[170px] object-cover border rounded-md"
+              className="object-cover border rounded-md"
+              style={{ width: '90px', height: '110px', marginBottom: '10px', marginTop: '0px'}}
             />
             <img
               src={thumbnail_2}
               alt="Thumbnail 2"
-              className="w-[120px] h-[170px] object-cover border rounded-md"
+              className="object-cover border rounded-md"
+              style={{ width: '90px', height: '110px', marginBottom: '10px', marginTop: '0px' }}
             />
             <img
               src={thumbnail_3}
               alt="Thumbnail 3"
-              className="w-[120px] h-[170px] object-cover border rounded-md"
+              className="object-cover border rounded-md"
+              style={{ width: '90px', height: '110px' }}
             />
           </div>
 
           {/* Right side - Main Image */}
-          <div className="flex items-center">
+          <div className="flex items-center" style={{ marginLeft: '50px' }}>
             <img
-              src={main_image} // Replace with your main image URL
+              src={main_image}
               alt="Xiaomi Band 3"
-              className="w-[498px] h-[624px] object-cover rounded-md"
+              className="object-cover border rounded-md"
+              style={{ width: '300px', height: '450px' }}
             />
           </div>
         </div>
@@ -102,8 +105,13 @@ function ProductDescription({ title, description, main_image, thumbnail_1, thumb
           </div>
         </div>
       </div>
+      <hr className="my-8 border-gray-20" />
     </div>
   );
 };
 
+
+
+
 export default ProductDescription;
+

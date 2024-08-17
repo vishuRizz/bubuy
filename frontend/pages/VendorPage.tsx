@@ -1,24 +1,24 @@
 export default function VendorPage() {
   const vendors = [
+    { name: 'Hulu', image: '/images/hulu.png', link: '/vendors/hulu' },
+    { name: 'Adobe', image: '/images/adobe.png', link: '/vendors/adobe' },
+    { name: 'Bandcamp', image: '/images/bandcamp.png', link: '/vendors/bandcamp' },
+    { name: 'Udemy', image: '/images/udemy.png', link: '/vendors/udemy' },
+    { name: 'Thingverse', image: '/images/thingverse.png', link: '/vendors/thingverse' },
+    { name: 'Mycybersale', image: '/images/mycybersale.png', link: '/vendors/mycybersale' },
+    { name: 'Gumroad', image: '/images/gumroad.png', link: '/vendors/gumroad' },
+    { name: 'Steam', image: '/images/steam.png', link: '/vendors/steam' },
+    { name: 'Skillshare', image: '/images/skillshare.png', link: '/vendors/skillshare' },
     { name: 'Google', image: '/images/google.png', link: '/vendors/google' },
-    { name: 'Microsoft', image: '/images/microsoft.png', link: '/vendors/microsoft' },
-    { name: 'Frantech', image: '/images/fantech.png', link: '/vendors/fantech' },
-    { name: 'Xiaomi', image: '/images/xiaomi.png', link: '/vendors/xiaomi' },
-    { name: 'Huawei', image: '/images/huawei.png', link: '/vendors/huawei' },
-    { name: 'Samsung', image: '/images/samsung.png', link: '/vendors/samsung' },
-    { name: 'Mcdodo', image: '/images/mcdodo.png', link: '/vendors/tesla' },
-    { name: 'Apple', image: '/images/apple.png', link: '/vendors/apple' },
-    { name: 'HP', image: '/images/hp.png', link: '/vendors/hp' },
-    { name: 'Dell', image: '/images/dell.png', link: '/vendors/dell' },
-    { name: 'Acer', image: '/images/acer.png', link: '/vendors/acer' },
-    { name: 'Kingston', image: '/images/kingston.png', link: '/vendors/kingston' },
+    { name: 'Envato', image: '/images/envato.png', link: '/vendors/envato' },
+    { name: 'Appsbee', image: '/images/appsbee.png', link: '/vendors/appsbee' },
   ];
 
   return (
     <div className="bg-gray-50 min-h-screen px-4 py-8">
       {/* Large Image Section */}
       <div className="max-w-6xl mx-auto mb-8">
-        <img src="/images/vendortop.png" alt="Vendor Top" className="w-full h-60 object-cover rounded-lg" />
+        <img src="/images/VendorTop.png" alt="Vendor Top" className="w-full h-60 object-cover rounded-lg" />
       </div>
 
       {/* Vendor Section */}
