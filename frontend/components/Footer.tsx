@@ -1,3 +1,7 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+
 function Footer() {
   return (
     <footer className="bg-gray-100">
@@ -14,9 +18,7 @@ function Footer() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="text-center md:text-left">
             <img src="/images/logo.png" alt="Logo" width={40} height={40} className="mx-auto md:mx-0 h-10 mb-4" />
-            <p className="text-gray-600 text-sm">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia consequat.
-            </p>
+            <p className="text-gray-600 text-sm">Shopping made easy</p>
           </div>
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Heading</h4>
@@ -39,10 +41,38 @@ function Footer() {
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Connect with us</h4>
             <div className="grid grid-cols-4 gap-2">
-              <div className="h-10 w-10 bg-gray-300 rounded-full"></div>
-              <div className="h-10 w-10 bg-gray-300 rounded-full"></div>
-              <div className="h-10 w-10 bg-gray-300 rounded-full"></div>
-              <div className="h-10 w-10 bg-gray-300 rounded-full"></div>
+              <a
+                href="https://www.facebook.com/yourpage"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center"
+              >
+                <FontAwesomeIcon icon={faFacebookF} className="text-white text-xl" />
+              </a>
+              <a
+                href="https://twitter.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center"
+              >
+                <FontAwesomeIcon icon={faTwitter} className="text-white text-xl" />
+              </a>
+              <a
+                href="https://www.instagram.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center"
+              >
+                <FontAwesomeIcon icon={faInstagram} className="text-white text-xl" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center"
+              >
+                <FontAwesomeIcon icon={faTiktok} className="text-white text-xl" />
+              </a>
             </div>
           </div>
         </div>
