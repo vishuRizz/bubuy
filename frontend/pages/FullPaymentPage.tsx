@@ -1,11 +1,22 @@
+import React, { useState } from 'react';
+
 function FullPaymentPage() {
-  // Assuming deposit fee and merchandise cost are pre-determined and calculated
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   const merchandiseSubtotal = 100.00;
   const deliveryFee = 20.00;
   const insuranceFee = 10.00;
-  
+ 
   const totalCost = merchandiseSubtotal + deliveryFee + insuranceFee;
-  const handInPrice = totalCost 
+  const handInPrice = totalCost ;
+
+  const handlePaymentClick = () => {
+    setIsDialogOpen(true);
+  };
+
+  const handleContinueClick = () => {
+    setIsDialogOpen(false);
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 p-8 relative">
@@ -79,7 +90,7 @@ function FullPaymentPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
-                
+                defaultChecked
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Insurance (10% product cost)
@@ -97,7 +108,7 @@ function FullPaymentPage() {
               <input
                 type="checkbox"
                 className="form-checkbox text-blue-600"
-                
+                defaultChecked
               />
               <span className="ml-3 text-gray-600 text-lg">
                 Terms & Condition
@@ -135,9 +146,33 @@ function FullPaymentPage() {
         {/* Payment Button */}
         <button
           className="bg-black text-white font-bold py-3 px-6 rounded-lg absolute bottom-16 right-16"
+          onClick={handlePaymentClick}
         >
           Payment
         </button>
+
+        {/* Payment Successful Dialog */}
+        {isDialogOpen && (
+          <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
+            <div className="bg-white rounded-lg p-6 text-center space-y-6 shadow-lg">
+              <h2 className="text-2xl font-semibold">Payment Successful</h2>
+              <p className="text-green-500 text-3xl">&#10003;</p>
+              <button
+                className="bg-black text-white font-bold py-2 px-4 rounded-lg"
+                onClick={handleContinueClick}
+              >
+                Continue
+              </button>
+              <div></div>
+              <button
+                className="text-blue-500 underline mt-4"
+                onClick={handleContinueClick}
+              >
+                Generate Invoice
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

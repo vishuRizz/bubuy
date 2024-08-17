@@ -8,6 +8,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 
 import FullPaymentPage from "./pages/FullPaymentPage";
 
+
 function App() {
   const { connected } = useWallet();
 
