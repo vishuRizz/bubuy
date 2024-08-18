@@ -14,7 +14,7 @@ function ProductDescription({ title, description, main_image, thumbnail_1, thumb
   const { vendorName, productName } = useParams();
 
   const handleBuyNowClick = () => {
-    navigate(`/vendors/${vendorName}/${productName}`);
+    navigate(`/vendors/${vendorName}/${productName}/full-payment`);
   };
 
   return (

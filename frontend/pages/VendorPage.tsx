@@ -18,7 +18,7 @@ export default function VendorPage() {
     <div className="bg-gray-50 min-h-screen px-4 py-8">
       {/* Large Image Section */}
       <div className="max-w-6xl mx-auto mb-8">
-        <img src="/images/VendorTop.png" alt="Vendor Top" className="w-full h-60 object-cover rounded-lg" />
+        <img src="/images/vendortop.png" alt="Vendor Top" className="w-full h-60 object-cover rounded-lg" />
       </div>
 
       {/* Vendor Section */}

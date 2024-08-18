@@ -66,14 +66,14 @@ function FullPaymentPage() {
         {/* Product Information Section */}
         <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
           <img
-            src="/images/mi.png"
+            src="/images/yacht2.jpg"
             alt="Delivery Illustration"
             width={244.67}
             height={186.45}
             className="h-48 rounded-md mb-4"
           />
           <div className="ml-0 md:ml-8 mt-4 md:mt-0">
-            <h3 className="text-2xl font-semibold">Xiaomi Band 3</h3>
+            <h3 className="text-2xl font-semibold">Yatch</h3>
             <span className="text-red-500 text-lg font-medium">50% OFF</span>
             <p className="text-gray-400 text-lg line-through">Before $200</p>
             <p className="text-cyan-600 text-2xl font-bold">Now $100</p>
@@ -83,9 +83,7 @@ function FullPaymentPage() {
         {/* Description Section */}
         <p className="text-gray-800 text-lg font-medium mb-2">Description</p>
         <p className="text-gray-600 text-lg mb-8">
-          The Mi Band 3 is a budget-friendly fitness tracker featuring a sleek, water-resistant design with an OLED
-          touchscreen display. It tracks your daily steps, heart rate, sleep patterns, and more, while offering up to 20
-          days of battery life on a single charge...
+          An engaging guide to mastering technology for the modern entrepreneur.
         </p>
 
         {/* Gray Bar */}
