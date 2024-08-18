@@ -9,12 +9,12 @@ interface Props {
   thumbnail_3: string;
 }
 
-function ProductDescription({ title, description, main_image, thumbnail_1, thumbnail_2, thumbnail_3 }) {
+function ProductDescription({ title, description, main_image, thumbnail_1, thumbnail_2, thumbnail_3 }: Props) {
   const navigate = useNavigate();
   const { vendorName, productName } = useParams();
 
   const handleBuyNowClick = () => {
-    navigate(`/vendors/${vendorName}/${productName}/full-payment`);
+    navigate(`/vendors/${vendorName}/${productName}`);
   };
 
   return (
