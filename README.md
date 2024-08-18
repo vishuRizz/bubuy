@@ -2,7 +2,7 @@
 
 ## Brief Description
 
-This prototype is part of the dEVMatch Hackathon organized by APUBCC, developed in the OPEN TRACK on the Aptos Blockchain. Globuy is a web app that empowers digital vendors to create smart contracts and sell products like eBooks, application licenses, online courses, and other digital products securely and efficiently on the Aptos blockchain. With low transaction fees and seamless integration into existing online stores, Globuy simplifies the process of selling digital products. Customers benefit from a smooth shopping experience and can participate in a gamified lottery by paying 1% extra on their purchase, which is added to a prize pool for a chance to win a monthly prize. Globuy merges the latest blockchain technology with practical features, creating a reliable and engaging marketplace for both sellers and buyers.
+This prototype is part of the dEVMatch Hackathon organized by APUBCC, developed in the OPEN TRACK on the Aptos Blockchain. Globuy is a web app that empowers digital vendors to create smart contracts and sell products like eBooks, application licenses, online courses, and other digital products securely and efficiently on the Aptos blockchain. With low transaction fees and seamless integration into existing online stores, Globuy simplifies the process of selling digital products. Customers benefit from a smooth shopping experience and can participate in a gamified lottery by paying 1% extra on their purchase, which is added to a prize pool for a chance to win a weekly/monthly prize. Globuy merges the latest blockchain technology with practical features, creating a reliable and engaging marketplace for both sellers and buyers.
 
 ## Getting Started
 
