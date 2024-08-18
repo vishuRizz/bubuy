@@ -43,9 +43,11 @@ Here’s a step-by-step guide to the purchasing process:
 
 2. Select Bandcamp: Once your wallet is connected, navigate to the Bandcamp vendor section on Globuy.
 3. 
-4. Select a Product: Browse through the available products and choose the one you wish to purchase. For example, select a product like "Yacht."
+4. Select a Product: Browse through the available products and choose the one you wish to purchase. Select a product like "Yacht."
 
-5. Click on Buy Now and Make a Payment: After selecting your desired product, click on the "Buy Now" button to proceed with the payment. The payment will be processed through your connected wallet. Ensure that you have enough APT coins in your wallet to complete the transaction.
+5. Click on Buy Now: After selecting your desired product, click on the "Buy Now" button to proceed with the payment. 
+
+6. Make a Payment: The payment will be processed through your connected wallet. Ensure that you have enough APT coins in your wallet to complete the transaction.
 
 6. Transaction Completion: The APT coins required for the purchase will be sent to the vendor account with the address 0xd7cc5f1b18f120b0864c2d3c64359adf8f55db9727c5bab969435d1dd4104bc7, which is managed by our platform
 
