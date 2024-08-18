@@ -3,6 +3,17 @@ import { Link, useParams } from "react-router-dom";
 
 export default function ProductListPage() {
   const { vendorName } = useParams();
+
+  // Check if the vendor is "Bandcamp" or not
+  if (vendorName?.toLowerCase() !== "bandcamp") {
+    return (
+      <div className="bg-gray-50 min-h-screen flex items-center justify-center">
+        <h1 className="text-3xl font-bold text-gray-700">Products coming soon.</h1>
+      </div>
+    );
+  }
+
+  // If the vendor is "Bandcamp", show the products
   const products = allProducts[vendorName as keyof typeof allProducts] || [];
 
   return (
