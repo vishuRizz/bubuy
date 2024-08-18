@@ -26,12 +26,9 @@ const ReviewSection = () => {
               </div>
             </div>
             <p className="text-gray-700">
-              I've been using the Mi Band 3 for a couple of weeks now, and I'm
-              thoroughly impressed. The device offers a sleek design and a
-              comfortable fit, making it easy to wear all day. Its OLED touch
-              display is bright and responsive, allowing me to view
-              notifications, track my steps, and monitor my heart rate
-              effortlessly.
+              As a digital product on Bandcamp, the book's presentation is sleek, with easy
+              navigation and a user-friendly interface. The integration of multimedia elements
+              enhances the reading experience, adding a modern touch to the traditional book format.
             </p>
             <div className="flex items-center space-x-4 mt-4">
               <button className="text-gray-500">Like</button>
@@ -54,11 +51,12 @@ const ReviewSection = () => {
               </div>
             </div>
             <p className="text-gray-700">
-              The battery life is exceptional; I only need to charge it once
-              every 20 days or so. For its price point, the Mi Band 3 delivers
-              outstanding value with reliable performance and useful fitness
-              tracking features. Highly recommended for anyone looking for an
-              affordable yet efficient fitness tracker.
+              The book is well-researched and provides in-depth analysis, though it remains
+              accessible for readers with varying levels of technical expertise. It covers a
+              wide range of topics, from AI to cybersecurity, offering a comprehensive overview of
+              the current technological climate.
+
+
             </p>
             <div className="flex items-center space-x-4 mt-4">
               <button className="text-gray-500">Like</button>
@@ -74,7 +72,7 @@ const ReviewSection = () => {
               <label className="text-gray-700">Your Name:</label>
               <input
                 type="text"
-                placeholder="John Doe"
+                placeholder="Ella Nadi"
                 className="w-full bg-gray-100 rounded-lg p-3 mt-1"
               />
             </div>

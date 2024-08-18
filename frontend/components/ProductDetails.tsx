@@ -23,7 +23,7 @@ function ProductDescription({ title, description, main_image, thumbnail_1, thumb
       {/* Back Button */}
       <div className="flex items-center mb-4 lg:w-1/2 lg:px-[120px] px-[120px] border-l border-r ">
         <button className="text-lg text-gray-600 hover:text-gray-900  ">
-          ← Xiaomi Page 
+          ← Yacht Page 
         </button>
       </div>
 
