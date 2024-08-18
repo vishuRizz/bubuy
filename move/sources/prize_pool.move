@@ -35,7 +35,7 @@ module module_addr::prize_pool {
     }
 
     /// Add contribution to the prize pool and add the payer to the participants list
-    public fun add_contribution(account: &signer, contributer: address, amount: u64) acquires PrizePool {
+    public entry fun add_contribution(account: &signer, contributer: address, amount: u64) acquires PrizePool {
         let prize_pool = borrow_global_mut<PrizePool>(signer::address_of(account));
         // Update the total pool amount
         prize_pool.total_pool = prize_pool.total_pool + amount;
