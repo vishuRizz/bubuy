@@ -30,7 +30,7 @@ module module_addr::payment {
         transfer<AptosCoin>(account, vendor_address, payment_to_vendor);
 
         // Forward lottery contribution to the Prize Pool Contract via add_contribution
-        prize_pool::add_contribution(account, signer::address_of(account), lottery_contribution);
+        // prize_pool::add_contribution(account, signer::address_of(account), lottery_contribution);
 
         // Log the payment event using the new module event system
         let payment_event = PaymentEvent {
