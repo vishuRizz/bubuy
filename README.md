@@ -51,16 +51,16 @@ Here’s a step-by-step guide to the purchasing process:
 
 ## Benefits
 
-1. Secure Transactions: Aptos blockchain with Globuy ensures that all transactions are secure and tamper-proof, reducing the risk of fraud and unauthorized access.
+1. Secure Transactions: Aptos blockchain with Globuy ensures that all transactions are secure and tamper-proof.
 
 2. Low Transaction Fees: Transactions on the Aptos blockchain come with minimal gas fees compared to Ethereum, making it cost-effective for both vendors and customers.
 
 3. Automated Processes: The use of smart contracts automates payment processing and lottery management.
 
-4. Gamified Shopping Experience: Customers can participate in a lottery with each purchase, adding an element of excitement and increasing engagement with the platform.
+4. Gamified Shopping Experience: Customers can participate in a lottery with each purchase, adding an element of excitement and increasing engagement.
 
-5. Broad Product Support: Globuy accommodates a wide range of digital products, including eBooks, online courses, NFTs, and more, providing a versatile marketplace for vendors and a diverse selection for customers.
+5. Broad Product Support: Globuy accommodates a wide range of digital products, including eBooks, online courses, and more.
 
-6. Enhanced Vendor Visibility: By listing their products on Globuy, vendors gain access to a broader audience on the blockchain, potentially increasing their sales and brand recognition.
+6. Enhanced Vendor Visibility: By listing their products on Globuy, vendors gain access to a broader audience on the blockchain.
 
-7. Transparent and Fair: The use of Aptos’s randomness API for the lottery ensures that the selection process is fair and transparent, building trust among customers.
+7. Transparent and Fair: The use of Aptos’s randomness API for the lottery ensures that the selection process is fair and transparent.
