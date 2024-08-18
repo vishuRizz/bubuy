@@ -48,3 +48,19 @@ Here’s a step-by-step guide to the purchasing process:
 4. Click on Buy Now and Make a Payment: After selecting your desired product, click on the "Buy Now" button to proceed with the payment. The payment will be processed through your connected wallet. Ensure that you have enough APT coins in your wallet to complete the transaction.
 
 5. Transaction Completion: The APT coins required for the purchase will be sent to the vendor account with the address 0xd7cc5f1b18f120b0864c2d3c64359adf8f55db9727c5bab969435d1dd4104bc7, which is managed by our platform
+
+## Benefits
+
+1. Secure Transactions: Aptos blockchain with Globuy ensures that all transactions are secure and tamper-proof, reducing the risk of fraud and unauthorized access.
+
+2. Low Transaction Fees: Transactions on the Aptos blockchain come with minimal gas fees compared to Ethereum, making it cost-effective for both vendors and customers.
+
+3. Automated Processes: The use of smart contracts automates payment processing and lottery management.
+
+4. Gamified Shopping Experience: Customers can participate in a lottery with each purchase, adding an element of excitement and increasing engagement with the platform.
+
+5. Broad Product Support: Globuy accommodates a wide range of digital products, including eBooks, online courses, NFTs, and more, providing a versatile marketplace for vendors and a diverse selection for customers.
+
+6. Enhanced Vendor Visibility: By listing their products on Globuy, vendors gain access to a broader audience on the blockchain, potentially increasing their sales and brand recognition.
+
+7. Transparent and Fair: The use of Aptos’s randomness API for the lottery ensures that the selection process is fair and transparent, building trust among customers.
